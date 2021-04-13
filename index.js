@@ -17,7 +17,7 @@ const questions = [
 
         {
             type: 'input',
-            message: 'Description of project?',
+            message: 'What is your project description?',
             name: 'description',
         },
 
@@ -29,7 +29,7 @@ const questions = [
 
         {
             type: 'input',
-            message: 'What is your emaiil?',
+            message: 'What is your email?',
             name: 'email',
         },
 
@@ -44,6 +44,30 @@ const questions = [
             message: 'What license would you like to use?',
             name: 'license',
         },
+
+        {
+            type: 'input',
+            message: 'What is your repository name?',
+            name: 'repository',
+        },
+
 ];
 
-   init();
+
+async function init() {
+    console.log("\n *** Welcome to the README Generator *** \n");
+    try {
+      const answers = await inquirer.prompt(questions);
+      await api.getUserInfo(answers.userName.trim())
+      .finally(() => {
+        const readme = `./readme/README-${answers.repoName.trim()}.md`;
+        writeToFile(readme, answers);
+      });
+    }
+    catch (error) {
+      console.log(error);
+    }
+  };
+  
+  init();
+
