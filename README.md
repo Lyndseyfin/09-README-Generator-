@@ -3,9 +3,12 @@
 
 ## HTML, CSS, JavaScript
 
-### Link to deployed application 
+### License
+![badge](https://img.shields.io/badge/license-${questions.license}-brightgreen)
+
+#### Link to deployed application 
 <a href=""></a>
 
-#### Screenshots
+##### Screenshots
 ![screenshot]
 ![screenshot]

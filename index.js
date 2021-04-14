@@ -2,9 +2,9 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
+const api = require("./utils/api");
 
-
-const writeFileAsync = util.promisify(fs.writeFile);
+// const writeFileAsync = util.promisify(fs.writeFile);
 
 
 // TODO: Create an array of questions for user input
@@ -43,6 +43,24 @@ const questions = [
             type: 'input',
             message: 'What license would you like to use?',
             name: 'license',
+            choices: [{
+                name: 'MIT License',
+            },
+            
+            {
+                name: 'GNU GPL v3.0',
+            },
+
+            {
+                name: 'Apache License 2.0',
+            },
+            
+            {
+                name: 'No License',
+            },
+
+
+            ]
         },
 
         {
@@ -52,6 +70,12 @@ const questions = [
         },
 
 ];
+
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function(err){
+        if (err){
+            console.error(err);
+        };
 
 
 async function init() {
