@@ -2,13 +2,16 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
-const api = require("./utils/api");
+// const api = require("./utils/api");
 
-// const writeFileAsync = util.promisify(fs.writeFile);
+
+const writeFileAsync = util.promisify(fs.writeFile);
 
 
 // TODO: Create an array of questions for user input
-const questions = [
+// const questions[]??
+const promptUser = () => {
+    return inquirer.prompt[
         {
             type: 'input',
             message: 'What is your project title?',
@@ -46,7 +49,7 @@ const questions = [
             choices: [{
                 name: 'MIT License',
             },
-            
+
             {
                 name: 'GNU GPL v3.0',
             },
@@ -54,44 +57,31 @@ const questions = [
             {
                 name: 'Apache License 2.0',
             },
-            
+
             {
                 name: 'No License',
             },
 
-
+            {
+                type: 'input',
+                message: 'What is your repository name?',
+                name: 'repository',
+            },
             ]
-        },
+            ,
+        }]
 
-        {
-            type: 'input',
-            message: 'What is your repository name?',
-            name: 'repository',
-        },
+    
+// create function to write README file
 
-];
+const init = () => {
+console.log("Please answer the following questions in order to generate a README file.")
 
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function(err){
-        if (err){
-            console.error(err);
-        };
+const answers = await promptUser();
 
 
-async function init() {
-    console.log("\n *** Welcome to the README Generator *** \n");
-    try {
-      const answers = await inquirer.prompt(questions);
-      await api.getUserInfo(answers.userName.trim())
-      .finally(() => {
-        const readme = `./readme/README-${answers.repoName.trim()}.md`;
-        writeToFile(readme, answers);
-      });
-    }
-    catch (error) {
-      console.log(error);
-    }
-  };
-  
-  init();
+writeFileAsync
+}
+};
 
+init();
