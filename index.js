@@ -4,7 +4,6 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
 const generateMarkdown = require('./generateMarkdown');
-// const api = require("./utils/api");
 
 //returns a promise object to prevent callback hell
 const writeFileAsync = util.promisify(fs.writeFile); 
@@ -17,11 +16,6 @@ const questions = [
         message: 'What is your project title?',
         name: 'title',
     },
-    {
-        type: 'input',
-        message: 'Please enter a Table of Contents here.',
-        name: 'table',
-    },
 
     {
         type: 'input',
@@ -31,7 +25,7 @@ const questions = [
 
     {
         type: 'input',
-        message: 'Please provide installation instructions here.',
+        message: 'What installations were used?',
         name: 'Installation',
     },
 
@@ -43,7 +37,7 @@ const questions = [
 
     {
         type: 'input',
-        message: 'Please provide contribution guidelines here.',
+        message: 'Who contributed to this project?',
         name: 'contributing',
     },
 
