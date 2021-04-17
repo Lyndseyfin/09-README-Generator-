@@ -15,20 +15,26 @@ Welcome to the README Generator. User will first launch this application via the
 8. License
 
 #### Installation 
+Used 'npm i' to insall all required pacakages.
 
 ##### Usage
+Input 'node index.js' into your bash/terminal to generate questions.
 
 ###### Contribution
+Myself
 
 ####### Tests
+Used 'npm test' to run tests
 
 ######## Github
+Lyndseyfin
 
 ######### Email
+lyndseyfinamore@gmail.com
 
 ########## License
 MIT License
 [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)](https://img.shields.io/badge/license-MIT-brightgreen)
 https://choosealicense.com/licenses/mit/
-undefined
+
   
