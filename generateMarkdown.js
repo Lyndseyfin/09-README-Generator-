@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT License":
-      return '[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)](https://img.shields.io/badge/license-MIT-brightgreen)';
+      return "[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)](https://img.shields.io/badge/license-MIT-brightgreen)";
     case "GNU GPL v3.0":
       return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)(https://www.gnu.org/licenses/gpl-3.0)';
     case "Apache License 2.0":
