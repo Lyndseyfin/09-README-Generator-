@@ -1,13 +1,23 @@
-# asdf
-## DESCRIPTION
-sdafs
-## LinkedIn
-gadsfdsf
+# README Generator
+## Description
+greatness
+## Table of Contents
+1,2,3,4,5,
+## Installation 
+alkgh
+## Usage
+lakj
+## Contributing
+lkjlkj
+## Tests
+lkjlkj
+## Github
+undefined
 ## Email
-agsdg
-## GitHub
-dsafagsd
+lkj
 ## License
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-https://choosealicense.com/licenses/gpl-3.0
+MIT License
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+https://choosealicense.com/licenses/mit/
   

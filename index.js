@@ -19,7 +19,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please enter a Table of Contents',
+        message: 'Please enter a Table of Contents here.',
         name: 'table',
     },
 
@@ -43,8 +43,26 @@ const questions = [
 
     {
         type: 'input',
-        message: 'What is your GitHub URL?',
-        name: 'GitHub',
+        message: 'Please provide contribution guidelines here.',
+        name: 'contributing',
+    },
+
+    {
+        type: 'input',
+        message: 'Please provide test instructions here.',
+        name: 'tests',
+    },
+    
+    {
+        type: 'input',
+        message: 'What is your GitHub?',
+        name: 'github',
+    },
+
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email',
     },
 
     {
@@ -67,6 +85,7 @@ const questions = [
             name: 'No License',
         },
         ]
+
     }];
 
 const promptUser = () => {
@@ -87,6 +106,6 @@ const init = () => {
     .catch((err) => console.error(err));
     
 
-}
+};
 
 init();

@@ -50,8 +50,16 @@ ${data.table}
 ${data.Installation}
 ## Usage
 ${data.usage}
-## Cont
-${data.GitHub}
+## Contributing
+${data.contributing}
+## Tests
+${data.tests}
+## Github
+${data.githuh}
+## Email
+${data.email}
+## License
+${data.license}
 ${renderLicenseSection(data.license)}
 ${renderLicenseBadge(data.license)}
 ${renderLicenseLink(data.license)}
