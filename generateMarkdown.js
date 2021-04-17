@@ -8,8 +8,9 @@ function renderLicenseBadge(license) {
       return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     case "Apache License 2.0":
       return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-    case "No license":
+    case "No License":
       return "";
+  }
 };
 
 // TODO: Create a function that returns the license link
@@ -22,7 +23,7 @@ function renderLicenseLink(license) {
       return "https://choosealicense.com/licenses/gpl-3.0";
     case "Apache License 2.0":
       return "https://choosealicense.com/licenses/apache-2.0/";
-    case "No license":
+    case "No License":
       return "";
   }
 };
@@ -30,14 +31,31 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
+if(license === "No License"){
+  return "";
+}else{
+  return "## License";
+}
 
 };
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  
+## Description
+${data.description}
+## Table of Contents
+${data.table}
+## Installation 
+${data.Installation}
+## Usage
+${data.usage}
+## Cont
+${data.GitHub}
+${renderLicenseSection(data.license)}
+${renderLicenseBadge(data.license)}
+${renderLicenseLink(data.license)}
+  `
 };
 
 module.exports = generateMarkdown;
