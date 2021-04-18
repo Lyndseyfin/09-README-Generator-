@@ -1,6 +1,6 @@
-# Demo
+# demo
 ## Description
-This is just a demonstration
+demo
 ## Table of Contents
 1. Description
 2. Installation
@@ -12,16 +12,16 @@ This is just a demonstration
 8. Email
 9. License
 ## Installation 
-npm
+demo
 ## Usage
-demo demo
+demo
 ## Contribution
-myself
+demo
 ## Tests
-demo demo
+demo
 ## Questions
-lyndseyfin
-lyndseyfinamore@gmail.com	
+demo
+demo
 ## License
 MIT License
 [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)](https://img.shields.io/badge/license-MIT-brightgreen)

@@ -9,6 +9,8 @@ Welcome to the README Generator. User will first launch this application via the
 5. [Contributing](#contribution)
 6. [Tests](#tests)
 7. [Questions](#questions)
+8. [License](#demo)
+9. [Demo](#demo)
 # Installation 
 I used 'npm i' to insall all required pacakages.
 ## Usage
@@ -26,3 +28,5 @@ I used 'npm test' to run tests.
 ## License
 ![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)
 
+## Demo
+<a href= "https://youtu.be/ALW3b7RH5pM">Demo</a>
