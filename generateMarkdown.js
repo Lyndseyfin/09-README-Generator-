@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
     case "MIT License":
       return "[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)](https://img.shields.io/badge/license-MIT-brightgreen)";
     case "GNU GPL v3.0":
-      return '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)(https://www.gnu.org/licenses/gpl-3.0)';
+      return "n[![GitHub license](https://img.shields.io/badge/license-GNU_GPL_v3.0-brightgreen)](https://img.shields.io/badge/license-GNU_GPL_v3.0-brightgreen)";
     case "Apache License 2.0":
       return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
       // return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)';
@@ -31,14 +31,14 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-if(license === "No License"){
-  return "";
-}else{
-  return;
-}
+// function renderLicenseSection(license) {
+// if(license === "No License"){
+//   return "";
+// }else{
+//   return;
+// }
 
-};
+// };
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -63,15 +63,13 @@ ${data.usage}
 ${data.contributing}
 ## Tests
 ${data.tests}
-## Github
-${data.githuh}
-## Email
+## Questions
+${data.github}
 ${data.email}
 ## License
 ${data.license}
 ${renderLicenseBadge(data.license)}
 ${renderLicenseLink(data.license)}
-${renderLicenseSection(data.license)}
   `
 };
 
