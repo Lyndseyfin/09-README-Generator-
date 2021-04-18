@@ -24,6 +24,5 @@ I used 'npm test' to run tests.
  lyndseyfinamore@gmail.com
 
 ## License
-MIT License
-[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)](https://img.shields.io/badge/license-MIT-brightgreen)
-https://choosealicense.com/licenses/mit/
+![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen)
+
