@@ -6,9 +6,8 @@ demo
 2. Installation
 3. Usage
 4. Contribution
-5. Contribution
-6. Tests
-7. Github
+5. Tests
+6. Questions
 8. Email
 9. License
 ## Installation 
