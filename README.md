@@ -32,4 +32,4 @@ I used 'npm test' to run tests.
 <a href= "https://youtu.be/ALW3b7RH5pM">Demo</a>
 
 ## Screenshot
-![screenshot](dist/ss.png)
+![screenshot](images/ss.png)
