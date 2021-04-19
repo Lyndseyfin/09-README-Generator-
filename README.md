@@ -15,7 +15,7 @@ Welcome to the README Generator. User will first launch this application via the
 # Installation 
 I used 'npm i' to insall all required pacakages.
 ## Usage
-iNPUT 'node index.js' into your bash/terminal to generte questions.
+Input 'node index.js' into your bash/terminal to generate questions.
 # Contribution
 Myself
 # Tests
