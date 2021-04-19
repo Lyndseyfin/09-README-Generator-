@@ -11,6 +11,7 @@ Welcome to the README Generator. User will first launch this application via the
 7. [Questions](#questions)
 8. [License](#demo)
 9. [Demo](#demo)
+10. [Screenshot](#screenshot)
 # Installation 
 I used 'npm i' to insall all required pacakages.
 ## Usage
